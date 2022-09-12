@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    background-color: purple;
+    flex-direction: row-reverse;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    width: 70px;
+    display: block;
+    padding: 25px 20px;
+}
+
+nav li a:hover {
+    transition: 1s;
+    font-weight: bold;
+    color: purple;
+    background-color: #fff;
+}
+
+.img {
+    margin-top: 20px;
+    box-shadow: 5px 2px 5px black;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.background {
+    position: relative;
+    background-image: radial-gradient(circle at 29% 55%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 4%, transparent 4%, transparent 44%, transparent 44%, transparent 100%), radial-gradient(circle at 85% 89%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 51%, transparent 51%, transparent 52%, transparent 52%, transparent 100%), radial-gradient(circle at 6% 90%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 53%, transparent 53%, transparent 64%, transparent 64%, transparent 100%), radial-gradient(circle at 35% 75%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 6%, transparent 6%, transparent 98%, transparent 98%, transparent 100%), radial-gradient(circle at 56% 75%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 16%, transparent 16%, transparent 23%, transparent 23%, transparent 100%), radial-gradient(circle at 42% 0%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 3%, transparent 3%, transparent 26%, transparent 26%, transparent 100%), radial-gradient(circle at 29% 28%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 51%, transparent 51%, transparent 75%, transparent 75%, transparent 100%), radial-gradient(circle at 77% 21%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 35%, transparent 35%, transparent 55%, transparent 55%, transparent 100%), radial-gradient(circle at 65% 91%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 46%, transparent 46%, transparent 76%, transparent 76%, transparent 100%), linear-gradient(45deg, rgb(83, 91, 235), purple);
+}
+
+.background p {
+    position: absolute;
+    top: 30%;
+    width: 30%;
+    left: 50%;
+    color: #fff;
+}
+
+.content {
+    margin-left: 2%;
+}
+
+.content h1 {
+    color: #fff;
+}
+
+.box {
+    border: 1px solid black;
+    box-shadow: 2px 1px 1px black;
+    margin-top: 20px;
+    display: flex;
+}
+
+.b1 {
+    border-radius: 4%;
+    height: auto;
+    background-color: rgb(250, 250, 250);
+    flex: 1;
+}
+
+.b1:hover {
+    transition: 1s;
+    background-color: rgb(16, 18, 163);
+    color: #fff;
+    box-shadow: 5px 4px 5px black;
+}
+
+.b2:hover {
+    transition: 1s;
+    background-color: rgb(230, 52, 52);
+    color: #fff;
+    box-shadow: 5px 4px 5px black;
+}
+
+.b2 {
+    padding-left: 10px;
+    border-radius: 10px;
+    height: auto;
+    background-color: rgb(250, 250, 250);
+    flex: 2;
+
+}
+
+.b1 ul {
+    margin-left: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box .b2 {
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+
+}
